@@ -12,17 +12,21 @@ import {
   tailwind,
   nodejs,
   mongodb,
+  python,
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+enprogix,
+
+  work1,
+  work2,
+  work3,
+  
+  socialLogo1,
+  socialLogo2,
+  socialLogo3,
+  socialLogo4,
+
 } from "../assets";
 
 export const navLinks = [
@@ -41,21 +45,22 @@ export const navLinks = [
 ];
 
 const services = [
-  {
-    title: "Web Developer",
-    icon: web,
+      {
+    title: "Engineer",
+    icon: creator,
   },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
+    {
     title: "Backend Developer",
     icon: backend,
   },
+
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Frontend  Developer",
+    icon: mobile,
+  },
+    {
+title: "Designer",
+    icon: web,
   },
 ];
 
@@ -98,7 +103,7 @@ const technologies = [
   },
   {
     name: "Three JS",
-    icon: threejs,
+    icon: python,
   },
   {
     name: "git",
@@ -113,152 +118,96 @@ const technologies = [
     icon: docker,
   },
 ];
-
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+title: "Team Lead",
+    company_name: " EnprogiX Club ",
+icon: enprogix,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+date: "May 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Founded and led a student club that supports AI solutions in energy creation and saving.",
+      "Recruited and managed a team of 4 students (planned to grow to 30) to arrange and conduct events, workshops, and competitions.",
+      "Developed an AI-based solar-powered water desalination system for the Technofest competition.",
+      "Aimed to optimize performance and efficiency, provide clean water for remote regions, and overcome challenges such as high costs,environmental impacts.",
     ],
   },
 ];
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    image: socialLogo1,
+    source_code_link: "https://www.linkedin.com/in/muhammedhaan/",
   },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    {
+    image: socialLogo2,
+    source_code_link: "https://twitter.com/Muhammed__Hasan",
   },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    {
+    image: socialLogo3,
+    source_code_link: "https://github.com/muhammedhasann",
   },
+    {
+    image: socialLogo4,
+    source_code_link: "https://www.youtube.com/channel/UCgEIJnIsBcyLum3ttNowXBg",
+  },
+
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Personal Website & Portfolio",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "I built responsive web apps using React and Bootstrap, deployed on GitHub Pages. Integrated APIs and libraries for enhanced functionality and user experience.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
+
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
+        name: "Bootstrap",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: work1,
+    source_code_link: "https://github.com/muhammedhasann/mamo-ai",
   },
   {
-    name: "Job IT",
+    name: "Cloud-Native Application",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Developed web programs, utilized GitHub actions for building, testing, and deploying applications. Implemented frontend pages, user administration, and database operations. Created backend services, integrated with cloud-native APIs, and established CI/CD pipeline.",
     tags: [
       {
-        name: "react",
+        name: "django",
         color: "blue-text-gradient",
       },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
+
       {
         name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: work3,
+    source_code_link: "https://github.com/muhammedhasann",
+  },
+  {
+    name: "Code Blog",
+    description:
+      "I developed a blog using Next.js, Tailwind CSS, and hosted it on Netlify. It documented my 100 Days of Code Challenge journey, with daily updates, project showcases, and discussions on challenges. The blog aimed to inspire and motivate others in coding.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+
+      {
+        name: "Tawilwind CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: work2,
+    source_code_link: "https://cerulean-tartufo-670f20.netlify.app/",
   },
 ];
 

@@ -23,10 +23,9 @@ const ServiceCard = ({ index, title, icon }) => (
       >
         <img
           src={icon}
-          alt='web-development'
+          alt='development'
           className='w-16 h-16 object-contain'
         />
-
         <h3 className='text-white text-[20px] font-bold text-center'>
           {title}
         </h3>
@@ -39,7 +38,7 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
+    <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
@@ -47,11 +46,9 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+      I’m a software developer and mechanical engineering student who loves creating efficient, scalable, and user-friendly solutions. I have skills in backend and frontend development, using JavaScript, Python, React, Node.js, Express, and Django. I’m a team player who delivers high-quality work and exceeds expectations. I’m excited to work with you and bring your ideas to life!
+
+
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

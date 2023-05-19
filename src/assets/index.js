@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -19,16 +19,20 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import python from "./tech/python.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import enprogix from "./company/enprogix.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import work1 from "./work1.png";
+import work2 from "./work2.jpeg";
+import work3 from "./work3.png";
+
+import socialLogo1 from "./nav-icon1.svg";
+import socialLogo2 from "./nav-icon2.svg";
+import socialLogo3 from "./nav-icon3.svg";
+import socialLogo4 from "./nav-icon4.svg";
+
+
 
 export {
   logo,
@@ -51,12 +55,14 @@ export {
   redux,
   tailwind,
   typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  python,
+enprogix,
+
+  work1,
+  work2,
+  work3,
+  socialLogo1,
+  socialLogo2,
+  socialLogo3,
+  socialLogo4,
 };
