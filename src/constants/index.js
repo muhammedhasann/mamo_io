@@ -137,7 +137,7 @@ date: "May 2023 - Present",
 const testimonials = [
   {
     image: socialLogo1,
-    source_code_link: "https://www.linkedin.com/in/muhammedhaan/",
+    source_code_link:  "https://www.linkedin.com/in/muhammedhaan/",
   },
     {
     image: socialLogo2,

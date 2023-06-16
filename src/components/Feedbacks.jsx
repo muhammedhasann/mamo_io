@@ -5,43 +5,40 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 
-const FeedbackCard = ({
-  index,
-  image,
-  source_code_link,
-}) => (
-  <motion.div variants={fadeIn("", "spring", index * 0.5, 0.75)}>
-    <div className="flex justify-center p-5 xs:w-[60px] w-full">
-      <div onClick={() => window.open(source_code_link)} className="cursor-pointer">
-        <img
-          src={image}
-          alt="source code"
-          className="object-contain w-16 h-16"
-          style={{ maxWidth: "100%", maxHeight: "100%" }}
-        />
-      </div>
-    </div>
+const FeedbackCard = ({ index, image, source_code_link }) => (
+  <motion.div
+    variants={fadeIn("", "spring", index * 0.5, 0.75)}
+    className="bg-black-200 p-5 rounded-3xl xs:w-[320px] flex items-center justify-center"
+  >
+    <a href={source_code_link} target="_blank" rel="noopener noreferrer">
+      <img
+        src={image}
+        alt="feedback"
+        className="w-10 h-10"
+      />
+    </a>
   </motion.div>
 );
 
-const Feedbacks = () => {
+const Footer = () => {
   return (
-    <div className={`mt-12 bg-black-100 rounded-[20px]`}>
-      <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[50px]`}>
+    <div className="mt-17 bg-black-100 rounded-[20px]">
+      <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}>
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>Find me on</p>
+          <p className={styles.sectionSubText}>Social Media</p>
+          <h2 className={styles.sectionHeadText}>Get in touch.</h2>
         </motion.div>
-      </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex justify-center xs:gap-6 sm:gap-8 md:gap-4 lg:gap-2 xl:gap-0`}>
-        {testimonials.map((testimonial, index) => (
-          <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
-        ))}
-      </div>
-      <div className="text-center -mt-10 pb-10">
-        <p>© Muhammed Hasan 2023.</p>
+        <div className="mt-10 pb-14 flex justify-center gap-20">
+          {testimonials.map((testimonial, index) => (
+            <FeedbackCard key={index} index={index} {...testimonial} />
+          ))}
+        </div>
+        <div className="pt-4 text-center">
+          <p className="text-500">© Muhammed Hasan 2023</p>
+        </div>
       </div>
     </div>
   );
 };
 
-export default SectionWrapper(Feedbacks, "");
+export default SectionWrapper(Footer, "");

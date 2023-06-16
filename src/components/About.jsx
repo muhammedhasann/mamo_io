@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt className='justify-center items-center xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -37,21 +37,19 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-    <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+      <motion.div variants={textVariant()} className='justify-center'>
+        <p className={styles.sectionSubText}>Introduction</p>
+        <h2 className={`${styles.sectionHeadText}`}>Overview.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[19px] w-full leading-[30px] justify-center'
       >
-      I’m a software developer and mechanical engineering student who loves creating efficient, scalable, and user-friendly solutions. I have skills in backend and frontend development, using JavaScript, Python, React, Node.js, Express, and Django. I’m a team player who delivers high-quality work and exceeds expectations. I’m excited to work with you and bring your ideas to life!
-
-
+        I’m a software developer and mechanical engineering student who loves creating efficient, scalable, and user-friendly solutions. I have skills in backend and frontend development, using JavaScript, Python, React, Node.js, Express, and Django. I’m a team player who delivers high-quality work and exceeds expectations. I’m excited to work with you and bring your ideas to life!
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 flex flex-wrap gap-10 w-full'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
@@ -61,3 +59,4 @@ const About = () => {
 };
 
 export default SectionWrapper(About, "about");
+
